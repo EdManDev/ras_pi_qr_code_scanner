@@ -1,0 +1,33 @@
+# Install libcamera and related packages for Ubuntu 22.04
+sudo apt update
+sudo apt install -y libcamera-dev libcamera-tools python3-libcamera
+
+# Install Python package dependencies
+sudo apt install -y python3-pip
+sudo pip3 install opencv-python-headless
+sudo pip3 install picamera2
+sudo pip3 install pyzbar
+
+# Make sure your user has access to the video devices
+sudo usermod -a -G video $USER
+
+# Check if the camera is detected
+v4l2-ctl --list-devices
+
+# If you're using a headless system and need display, install these
+sudo apt install -y python3-opencv
+sudo apt install -y libqt5gui5
+
+
+
+
+
+vcgencmd get_camera
+
+sudo chmod 666 /dev/video0
+
+dmesg | grep -i camera
+
+pip install libcamera
+
+

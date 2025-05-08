@@ -1,0 +1,21 @@
+# Core dependencies
+opencv-python>=4.5.0
+numpy>=1.20.0
+pyzbar>=0.1.8
+
+# For Raspberry Pi camera support
+picamera2>=0.3.12
+
+# Optional utilities that may be helpful
+argparse>=1.4.0
+Pillow>=8.0.0  # For additional image processing capabilities
+matplotlib>=3.4.0  # For visualization if needed
+
+# System dependencies (install via apt):
+# sudo apt-get install -y libzbar0 libzbar-dev
+
+# Install dependencies
+pip install opencv-python numpy pyzbar picamera2 argparse Pillow matplotlib
+
+# Run the script
+python qr_scanner.py
