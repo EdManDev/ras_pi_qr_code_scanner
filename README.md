@@ -67,6 +67,7 @@ A versatile QR code scanner application capable of running on both Raspberry Pi 
    sudo apt update
    sudo apt install -y python3-pip python3-opencv
    sudo apt install -y libzbar0 libzbar-dev
+   pip3 install opencv-python numpy pyzbar argparse
    
    # Install Python packages
    pip3 install -r requirements.txt
