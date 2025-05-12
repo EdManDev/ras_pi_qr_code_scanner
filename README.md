@@ -72,7 +72,10 @@ A versatile QR code scanner application capable of running on both Raspberry Pi 
    # Install Python packages
    pip3 install -r requirements.txt
    ```
-
+   ```bash
+      sudo apt install -y libcamera-dev python3-pyqt5 python3-pip
+      pip3 install numpy
+   ```
    ### For standard systems with webcam:
    ```bash
    # Install system dependencies (if on Linux)
